@@ -1,0 +1,145 @@
+@charset 'UTF-8';
+
+html,
+html * {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  	font-family: arial, sans-serif;
+  	font-size: 1vw;
+  	background:
+		radial-gradient(black 15%, transparent 16%) 0 0,
+		radial-gradient(black 15%, transparent 16%) 8px 8px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 0 1px,
+		radial-gradient(rgba(255,255,255,.1) 15%, transparent 20%) 8px 9px;
+  	background-color:rgba(40,40,40,0.7);
+	background-size:16px 16px;
+	min-width: 650px;
+}
+
+h1 {
+	font-family: "Barricada Pro";
+	color: white;
+	text-shadow: 
+		3px 3px 0 #000000,
+     	-1px -1px 0 #000000,  
+      	1px -1px 0 #000000,
+      	-1px 1px 0 #000000,
+       	1px 1px 0 #000000;
+	font-size: 42px;
+}
+
+hr { 
+    display: block;
+    margin-top: 2em;
+    margin-bottom: 0em;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 2px;
+}
+
+a:link {
+    color: black;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+a:visited {
+    color: black;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+a:hover {
+    color: black;
+	text-decoration: none;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+a:active {
+    color: black;
+	font-weight: bold;
+	font-size: 14px;
+}
+
+header {
+	width: 100%;
+	background: linear-gradient(180deg, rgb(90,90,90), rgb(200,200,200));
+	outline: #000000 solid thick;
+}
+
+.header {
+	background: linear-gradient(180deg, rgb(90,90,90), rgb(200,200,200));
+}
+
+.navbar-brand {
+	width: 100%;
+	height: auto;
+}
+
+.header-text {
+	color: rgba(25,25,25,1.00);
+	font-family: "Barricada Pro";
+	font-size: 3em;
+	font-weight: normal;
+	text-shadow: 
+		3px 3px 0 #ffffff,
+     	-1px -1px 0 #ffffff,  
+      	1px -1px 0 #ffffff,
+      	-1px 1px 0 #ffffff,
+       	1px 1px 0 #ffffff;
+}
+
+.navbar-toggle {
+	float: right;
+	position: relative;
+	background-color: white;
+	vertical-align: middle;
+}
+
+.link-text {
+	font-size: 2em;
+	color: rgba(225,225,225,1.00);
+	font-weight: bold;
+	text-shadow: 
+		3px 3px 0 #000000,
+     	1px -1px 0 #000000,  
+      	1px -1px 0 #000000,
+      	-1px 1px 0 #000000,
+       	1px 1px 0 #000000;
+}
+
+.link-text:hover {
+	color: #FF193F;
+}
+
+.site_section {
+	padding-top: 1em;
+	
+}
+
+.current-link {
+	color: #1E909A;
+}
+
+.current-link:hover {
+	color: #FF193F;
+}
+
+.front-page-text {
+	padding-top: 2em;
+	padding-left: 2em;
+	padding-right: 1em;
+	font-weight: bold;
+	font-size: 14px;
+	text-align: left;
+}
+
+.socialrow {
+	padding-top: 2em;
+}

@@ -1,6 +1,52 @@
-/* GLOBAL STYLES */
+/* CSS Reset */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
 body {
-  background: #333;
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* Styling of the website */
+
+body {
+  background: #e8e8e8;
   color: #fff;
   font-family: monospace;
   padding-top: 5em;
@@ -8,14 +54,37 @@ body {
   justify-content: center;
 }
 
+div.terminal-top {
+	background: #000000;
+	width: 1600px;
+	padding-bottom: 0px;
+	border-radius: 8px;
+}
+
+div.terminal-window {
+	padding-top: 0px;
+	background: #333;
+	width: 1600px;
+	height: 850px;
+	border-radius: 8px;
+}
+
+div.terminal-writing {
+	padding-top: 3em;
+	padding-left: 3em;
+}
+
 .css-typing
 {   
-    font-size: 14px;
+    font-size: 20px;
+	padding-bottom: 0.5em;
     width: 50em;
     white-space:nowrap;
     overflow:hidden;
-    -webkit-animation: type 1s steps(40, end);
-    animation: type 1s steps(40, end);
+    -webkit-animation: 
+		type 1s steps(40, end);
+    animation: 
+		type 1s steps(40, end);
 }
 
 .css-typing:nth-child(2)
@@ -23,8 +92,10 @@ body {
     white-space:nowrap;
     overflow:hidden;    
     opacity:0;
-    -webkit-animation: type 1s steps(40, end);
-    animation: type2 1s steps(40, end);
+    -webkit-animation: 
+		type 1s steps(40, end);
+    animation: 
+		type2 1s steps(40, end);
     -webkit-animation-delay: 1s; 
     animation-delay: 1s;
     -webkit-animation-fill-mode: forwards;
@@ -35,10 +106,12 @@ body {
     white-space:nowrap;
     overflow:hidden;
     opacity:0;
-    -webkit-animation: type 5s steps(40, end);
-    animation: type3 5s steps(40, end);
-    -webkit-animation-delay: 10s; 
-    animation-delay: 10s;
+    -webkit-animation: 
+		type 1s steps(40, end);
+    animation: 
+		type3 1s steps(40, end);
+    -webkit-animation-delay: 2s; 
+    animation-delay: 2s;
     -webkit-animation-fill-mode: forwards;
     animation-fill-mode: forwards;
 }
